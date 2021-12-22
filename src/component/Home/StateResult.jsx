@@ -59,7 +59,7 @@ class StateResults extends React.Component {
         return (
             <div className='parent-state-results m-2'>
             <Row className='mt-2'>
-            {this.state.stateValues.map((productSpec, index) => (
+            {this.state.stateValues.length !== 0 ? this.state.stateValues.map((productSpec, index) => (
                   <Col xs lg="4" className='mb-2' key={index.toString()}>
                     <Card>
                         <Card.Body>
@@ -78,7 +78,7 @@ class StateResults extends React.Component {
                         </Card.Body>
                     </Card>
                 </Col>
-            ))}
+            )) : <p className='text-center'>No Data Found</p>}
             </Row>
     </div>
         )

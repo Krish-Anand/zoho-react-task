@@ -58,7 +58,7 @@ class DeltaStates extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.tableResults.map((tableValues, index) => ( 
+                        {this.state.tableResults.length !== 0 ? this.state.tableResults.map((tableValues, index) => ( 
                         <tr key={index.toString()}>
                         <td>{tableValues.dates}</td>
                         <td>{tableValues.total.confirmed ? tableValues.total.confirmed : 0}</td>
@@ -79,7 +79,7 @@ class DeltaStates extends React.Component {
                             </ListGroup>
                         </td>
                         </tr>
-                        ))}
+                        )) : <tr><td colSpan={6}>No Data Found</td></tr>}
                     </tbody>
                 </Table>
             </div>
