@@ -1,0 +1,30 @@
+.list-group-item {
+    border: none !important;
+}
+
+.react-datepicker__input-container {
+    input {
+        line-height: 37px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border: 1px solid #ced4da;
+        padding: 0;
+    }
+}
+
+.date-picker {
+    .d-flex {
+        .input-group-text {
+            border-top-right-radius: 0;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 5px;
+        }
+    }
+}
+
+.parent-state-results {
+    overflow-x: hidden;
+}
